@@ -4,8 +4,10 @@ import styles from "./Header.module.css";
 function Header() {
   return (
     <div className={styles["top-section"]}>
-      <h1 className={styles.heroText}>Give your meetings</h1>
-      <h1 className={styles.heroText}>superpowers</h1>
+      <h1 className={styles["heroText"]}>Give your meetings</h1>
+      <h1 className={`${styles.heroText} ${styles["text-gradient"]}`}>
+        superpowers
+      </h1>
       <h4 className={styles["hero-subtitle"]}>
         Macro is a customizable meeting interface built on top of Zoom,
         reimagined for collaboration and inclusive conversations
@@ -13,16 +15,18 @@ function Header() {
       <form action="">
         <input
           type="email"
-          className={styles.input}
+          className={styles["input"]}
           name="mail"
           id="mail"
           placeholder="Enter your work email"
         />
-        <div className={(styles["btn"], styles["start-btn"])}>
+        <div className={`${styles.btn} ${styles.startBtn}`}>
           <span>Get Started</span>
         </div>
       </form>
-      <p>No waitlist - available for download now.</p>
+      <p className={styles["btn-subtitle"]}>
+        No waitlist - available for download now.
+      </p>
     </div>
   );
 }
