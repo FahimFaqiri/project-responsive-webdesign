@@ -19,22 +19,31 @@ export const StyledMenu = styled.nav`
     width: 100%;
   }
 
+  @media (min-width: ${({ theme }) => theme.tablet}) {
+    width: 100%;
+    margin-top: 8%;
+  }
+
   .menu-block-links {
     width: 100%;
     margin-top: 10%;
   }
 
-  .link-1 {
+  .link {
     width: 100%;
     text-align: left;
     padding: 15px 30px;
+
+    @media (min-width: ${({ theme }) => theme.tablet}) {
+      text-align: center;
+    }
   }
 
-  .link-1:hover {
+  .link:hover {
     background-color: ${({ theme }) => theme.primaryBtnHover};
   }
 
-  .link-1:last-child {
+  .link:last-child {
     border-bottom: 1px solid ${({ theme }) => theme.primaryBtnHover};
   }
 
@@ -48,7 +57,7 @@ export const StyledMenu = styled.nav`
     text-transform: uppercase;
     // padding: 2rem 0;
     // font-weight: bold;
-    text-align: left;
+    // text-align: left;
     font-weight: 400;
     // letter-spacing: 0.5rem;
     color: ${({ theme }) => theme.primaryDark};
@@ -60,8 +69,14 @@ export const StyledMenu = styled.nav`
       // text-align: center;
     }
 
+    @media (min-width: ${({ theme }) => theme.tablet}) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
+    }
     }
   }
 `;

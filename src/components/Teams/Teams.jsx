@@ -9,22 +9,22 @@ function Teams() {
         <h3>Hyper-productive teams run on pages</h3>
         <div className={styles["grid-container"]}>
           <div className={styles["grid-item"]}>
-            <img src={github}></img>
+            <img src={github} alt="image"></img>
           </div>
           <div className={styles["grid-item"]}>
-            <img src={academy}></img>
+            <img src={academy} alt="image"></img>
           </div>
           <div className={styles["grid-item"]}>
-            <img src={drift}></img>
+            <img src={drift} alt="image"></img>
           </div>
           <div className={styles["grid-item"]}>
-            <img src={fast}></img>
+            <img src={fast} alt="image"></img>
           </div>
           <div className={styles["grid-item"]}>
-            <img src={uber}></img>
+            <img src={uber} alt="image"></img>
           </div>
           <div className={styles["grid-item"]}>
-            <img src={vm_ware}></img>
+            <img src={vm_ware} alt="image"></img>
           </div>
         </div>
       </div>

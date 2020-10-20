@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
+import cx from "classnames";
 
 function Header() {
   return (
@@ -15,12 +16,14 @@ function Header() {
       <form action="">
         <input
           type="email"
-          className={styles["input"]}
+          className={cx(styles["input"], styles["col-t-9"])}
           name="mail"
           id="mail"
           placeholder="Enter your work email"
         />
-        <div className={`${styles.btn} ${styles.startBtn}`}>
+        <div
+          className={cx(styles["btn"], styles["startBtn"], styles["col-t-9"])}
+        >
           <span>Get Started</span>
         </div>
       </form>

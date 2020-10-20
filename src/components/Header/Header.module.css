@@ -46,6 +46,13 @@ span,
   text-align: center;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .input {
   height: 60px;
   padding-left: 20px;
@@ -84,6 +91,25 @@ span,
 
 @media only screen and (min-width: 600px) {
   /* For tablets */
+  .btn {
+    background-color: green;
+  }
+
+  .heroText {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 50px;
+  }
+
+  .btn-subtitle {
+    font-size: 22px;
+  }
+
   .col-t-1 {
     width: 8.33%;
   }
@@ -124,6 +150,9 @@ span,
 
 @media only screen and (min-width: 768px) {
   /* For desktop */
+  .btn {
+    background-color: yellow;
+  }
   .col-1 {
     width: 8.33%;
   }
@@ -159,5 +188,18 @@ span,
   }
   .col-12 {
     width: 100%;
+  }
+
+  /* large devices */
+  @media only screen and (min-width: 992px) {
+    .btn {
+      color: red;
+    }
+  }
+  /* extra large devices */
+  @media only screen and (min-width: 1200px) {
+    .btn {
+      background-color: fuchsia;
+    }
   }
 }

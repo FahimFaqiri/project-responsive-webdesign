@@ -1,5 +1,13 @@
 import React, { useState, useRef } from "react";
-import { Header, Nav, Burger, Menu, Teams } from "./components";
+import {
+  Header,
+  Nav,
+  Burger,
+  Menu,
+  Teams,
+  Centered,
+  Video,
+} from "./components";
 import styles from "./App.module.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
@@ -21,6 +29,8 @@ function App() {
           <Nav />
           <Header />
           <Teams />
+          <Centered />
+          <Video />
         </div>
         <div ref={node}>
           <Burger open={open} setOpen={setOpen} />

@@ -4,5 +4,7 @@ export const theme = {
   primaryMidLight: "rgba(175, 174, 174, 0.700)",
   primaryHover: "#343078",
   primaryBtnHover: "#cfcfcf",
-  mobile: "576px",
+  midGreyTone: "#e5ebeb",
+  mobile: "600px",
+  tablet: "600px",
 };

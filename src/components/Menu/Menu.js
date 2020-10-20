@@ -7,7 +7,7 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <div className="menu-block-links">
-        <div className="link-1">
+        <div className="link link-1">
           <a href="/">
             <i class="fa fa-automobile"></i>
             {/* <span role="img" aria-label="about us">
@@ -16,7 +16,7 @@ const Menu = ({ open }) => {
             About us
           </a>
         </div>
-        <div className="link-1">
+        <div className="link link-2">
           <a href="/">
             {/* <span role="img" aria-label="price">
           &#x1f4b8;
@@ -25,7 +25,7 @@ const Menu = ({ open }) => {
             Pricing
           </a>
         </div>
-        <div className="link-1">
+        <div className="link link-1">
           <a href="/">
             {/* <span role="img" aria-label="contact">
           &#x1f4e9;

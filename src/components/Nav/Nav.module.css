@@ -41,12 +41,15 @@
 .active {
 }
 
-[class*="col-"] {
+/* [class*="col-"] {
   width: 100%;
-}
+} */
 
 @media only screen and (min-width: 600px) {
   /* For tablets */
+  .navbar {
+    background-color: blueviolet;
+  }
   .col-t-1 {
     width: 8.33%;
   }
@@ -87,6 +90,14 @@
 
 @media only screen and (min-width: 768px) {
   /* For desktop */
+  .navbar {
+    background-color: yellow;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
+  }
   .col-1 {
     width: 8.33%;
   }
@@ -122,5 +133,18 @@
   }
   .col-12 {
     width: 100%;
+  }
+
+  /* large devices */
+  @media only screen and (min-width: 992px) {
+    .navbar {
+      background-color: green;
+    }
+  }
+  /* extra large devices */
+  @media only screen and (min-width: 1200px) {
+    .navbar {
+      background-color: goldenrod;
+    }
   }
 }
