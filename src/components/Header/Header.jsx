@@ -19,7 +19,7 @@ function Header() {
           className={cx(styles["input"], styles["col-t-9"])}
           name="mail"
           id="mail"
-          placeholder="Enter your work email"
+          placeholder="Enter your work email >"
         />
         <div
           className={cx(styles["btn"], styles["startBtn"], styles["col-t-9"])}

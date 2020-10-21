@@ -62,8 +62,23 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .video {
+    display: flex;
+    padding: 60px 40px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .video-block-1 {
+    text-align: left;
+    max-width: 500px;
+  }
+  .continue {
+    max-width: 500px;
+  }
+  .learn-more-text {
+    width: 100%;
+    text-align: left;
+  }
 }
